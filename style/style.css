@@ -1,0 +1,20 @@
+:root {
+  --main-color: #d0ae5e;
+}
+
+
+/* Header */
+.navbar-brand img{
+  max-height: 35px;
+}
+
+header .book-btn {
+  background-color: var(--main-color);
+  display: inline-block;
+  padding: 3px 17px;
+}
+
+header ul li a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
