@@ -8,6 +8,11 @@ header {
   border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
 }
 
+header.black-header {
+  background-color: #111;
+  padding: 12px 0 !important;
+}
+
 header .navbar-brand img{
   max-height: 35px;
 }
