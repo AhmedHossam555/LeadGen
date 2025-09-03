@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Varaibles Dom
   const windowDom = $(window);
   const headerDom = $('header');
     // Add or remove 'black-header' class based on scroll position
@@ -8,5 +9,9 @@ $(document).ready(function(){
     }else{
       headerDom.removeClass('black-header');
     }
-  })
-})
+  });
+
+
+
+
+});

@@ -2,6 +2,9 @@
   --main-color: #d0ae5e;
 }
 
+body {
+  font-family: familyMontserrat;
+}
 
 /* Header */
 header {
