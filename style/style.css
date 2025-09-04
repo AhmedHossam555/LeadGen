@@ -61,7 +61,7 @@ header ul li a:hover {
 /* Home Section */
 .home {
   background-size: cover;
-  height: calc(100vh + 200px);
+  height: calc(100vh + 220px);
   position: relative;
 }
 
@@ -69,15 +69,22 @@ header ul li a:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 40px;
+  bottom: 35px;
 }
 
+.owl-page.active span {
+  background-color: #fff !important;
+}
 #home-slider-1 {
   background-image: url('../images/agency-slider-01.jpg');
 }
 
 #home-slider-2 {
-  background-image: url('../images/agency-slider-02.jpg');
+  background-image: url('../images/agency-slider-2.jpg');
+}
+
+#home-slider-3 {
+  background-image: url('../images/agency-slider-03.jpg');
 }
 
 .home::before {
