@@ -1,6 +1,7 @@
 :root {
   --main-color: #d0ae5e;
   --second-color: #f26149;
+  --three-color: #707070;
 }
 
 body {
@@ -22,6 +23,10 @@ a {
 
 .opacity:hover {
   opacity: 0.8;
+}
+
+.main-border {
+  border-bottom: 1px solid #ececec;
 }
 
 @media (max-width: 768px){
@@ -55,7 +60,6 @@ header ul li a {
   font-size: 12px !important;
   font-weight: 500 !important;
 }
-
 
 @media (max-width: 768px){
   header .navbar-nav {
@@ -114,7 +118,6 @@ header ul li a {
   border: 6px solid #fff;
 }
 
-
 .home .slider-box-title {
   font-weight: 700;
   font-size: 80px;
@@ -139,7 +142,6 @@ header ul li a {
   border: 2px solid #fff;
 }
 
-
 @media (max-width: 992px) {
   .home h1{
      font-size: 60px !important;
@@ -163,14 +165,14 @@ header ul li a {
 }
 
 #about .content {
-  color: #707070;
+  color: var(--three-color);
   margin-bottom: 18px;
   font-size: 18px;
   line-height: 28px;
 }
 
 #about p {
-  color: #707070;
+  color: var(--three-color);
   letter-spacing: 0.13px;
   line-height: 24px;
   font-size: 14px;
@@ -182,8 +184,23 @@ header ul li a {
   font-weight: 600;
   padding: 8px 25px;
   color: var(--main-color);
-  border: 1.6px solid var(--main-color);
+  border: 2px solid var(--main-color);
   border-radius: 30px;
   cursor: pointer;
 }
 
+
+/* Services  Section*/
+#services h3 {
+  font-size: 14px;
+  color: #282828;
+  margin-bottom: 5px;
+  margin-top: 22px;
+}
+
+#services p {
+  font-size: 14px;
+  color: var(--three-color);
+  margin-bottom: 5px;
+  line-height: 24px;
+}
