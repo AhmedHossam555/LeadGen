@@ -7,6 +7,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  outline: none;
+}
+
 /* Header */
 header {
   border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
@@ -55,14 +59,28 @@ header ul li a:hover {
 }
 
 /* Home Section */
-#home {
-  background-image: url('../images/agency-slider-01.jpg');
+.home {
   background-size: cover;
   height: calc(100vh + 200px);
   position: relative;
 }
 
-#home::before {
+.home-owl .owl-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+}
+
+#home-slider-1 {
+  background-image: url('../images/agency-slider-01.jpg');
+}
+
+#home-slider-2 {
+  background-image: url('../images/agency-slider-02.jpg');
+}
+
+.home::before {
   content:'';
   position: absolute;
   width: 100%;
@@ -70,18 +88,18 @@ header ul li a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-#home .slider-box {
+.home .slider-box {
   background-color: var(--second-color);
   padding: 24px;
 }
 
-#home .slider-box-border {
+.home .slider-box-border {
   padding: 48px;
   border: 6px solid #fff;
 }
 
 
-#home .slider-box-title {
+.home .slider-box-title {
   font-weight: 700;
   font-size: 80px;
   letter-spacing: 0.13px;
@@ -90,7 +108,7 @@ header ul li a:hover {
   height: 160px;
 }
 
-#home .slider-box-desc {
+.home .slider-box-desc {
   line-height: 28px;
   font-weight: 500;
   font-size: 18px;
@@ -98,7 +116,7 @@ header ul li a:hover {
   font-family: sans-serif;
 }
 
-#home a {
+.home a {
   font-size: 12px !important;
   font-family: "Montserrat", sans-serif;
   padding: 8px 20px;
@@ -106,15 +124,15 @@ header ul li a:hover {
   transition: opacity 0.3s ease;
 }
 
-#home a:hover {
+.home a:hover {
   opacity: 0.8 !important;
 }
 
 @media (max-width: 992px) {
-  #home h1{
+  .home h1{
      font-size: 60px !important;
   }
-  #home .slider-box-border {
+  .home .slider-box-border {
     padding: 32px !important;
   }
 }

@@ -10,8 +10,16 @@ $(document).ready(function(){
       headerDom.removeClass('black-header');
     }
   });
-
-
+  // Owl Carousel for slider image 
+    $(".owl-carousel").owlCarousel({
+         responsive: true,
+         items : 1,
+         navigationText : ["prev","next"],
+        itemsDesktop : false,
+        itemsDesktopSmall : false,
+        itemsTablet: false,
+        itemsMobile : false
+    });
 
 
 });
