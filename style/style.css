@@ -29,6 +29,14 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
+.btn-rounded {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .p-tb {
     padding: 68px 0;
@@ -234,3 +242,39 @@ header ul li a {
   background-size: cover;
   height: 690px;
 }
+
+#services-discover a {
+  color: white;
+  background-color: var(--main-color);
+}
+
+/* Menu Section */
+#menu-section {
+  background-image: url('../images/restaurant-menu-bg.jpg');
+  background-size: cover;
+  position: relative;
+
+}
+
+#menu-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);  
+}
+
+#menu-section h2 {
+  color: #4e2b1f;
+  line-height: 2;
+  font-size: 35px;
+}
+
+#menu-section .menu-text {
+  color: var(--three-color);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 710px;
+  margin-bottom: 65px;
+}
+
