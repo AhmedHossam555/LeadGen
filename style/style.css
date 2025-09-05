@@ -278,3 +278,35 @@ header ul li a {
   margin-bottom: 65px;
 }
 
+#menu-section .nav-menu {
+  display: flex;
+  justify-content: center;
+}
+#menu-section .nav-menu li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#menu-section .nav-menu a {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#menu-section .nav-menu li:hover a {
+  opacity: 1;
+}
+#menu-section .nav-menu span {
+  color: var(--main-color);
+  font-size: 14px;
+}
+
+@media (max-width: 768px){
+  #menu-section .nav-menu {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 40px
+  }
+}
