@@ -302,11 +302,43 @@ header ul li a {
   font-size: 14px;
 }
 
+#menu-section .menu-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+}
+
+#menu-section .menu-item {
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 16px;
+
+}
+#menu-section .menu-item h3 {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+#menu-section .menu-item-title {
+  flex: 1 ;
+}
+
+#menu-section .menu-item-desc {
+  font-size: 14px;
+  color: #282828;
+  line-height: 1.7;
+  margin-bottom: 22px;
+
+}
 @media (max-width: 768px){
   #menu-section .nav-menu {
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 40px
+  }
+
+  #menu-section .menu-container {
+    grid-template-columns: 1fr;
   }
 }
