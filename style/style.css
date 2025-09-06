@@ -450,3 +450,25 @@ header ul li a {
   padding: 12px 30px !important;
 }
 
+/* Blog Section */
+.blog-box-image img{
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+
+.blog-box:hover .blog-box-image img {
+  transform: scale(1.2,1.2);
+  opacity: 0.5;
+}
+
+.blog-box-content h3{
+  font-size: 14px !important;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+.blog-box-content p {
+  font-size: 14px !important;
+  color: var(--three-color);
+  line-height: 22px;
+}
