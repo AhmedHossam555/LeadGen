@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Global class and style */
 a {
   outline: none;
   text-decoration: none;
@@ -50,7 +51,13 @@ a {
   margin-bottom: 65px;
 }
 
+.text-dark-gray {
+  color: #282828 !important;
+}
 
+.owl-carousel .owl-item {
+  cursor:e-resize !important; 
+}
 
 @media (max-width: 768px) {
   .p-tb {
@@ -69,7 +76,7 @@ header.black-header {
   border-bottom: 0;
 }
 
-header .navbar-brand img {
+header .navbar-band img {
   max-height: 35px;
 }
 
@@ -108,7 +115,7 @@ header ul li a {
   bottom: 35px;
 }
 
-.owl-page.active span {
+.home-owl .owl-page.active span {
   background-color: #fff !important;
 }
 #home-slider-1 {
@@ -215,7 +222,6 @@ header ul li a {
 /* Services  Section*/
 #services h3 {
   font-size: 14px;
-  color: #282828;
   margin-bottom: 5px;
   margin-top: 22px;
 }
@@ -265,21 +271,18 @@ header ul li a {
 
 /* Menu Section */
 #menu-section {
-  background-image: url('../images/restaurant-menu-bg.jpg');
+  background-image: url("../images/restaurant-menu-bg.jpg");
   background-size: cover;
   position: relative;
-
 }
 
 #menu-section::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);  
+  background: rgba(255, 255, 255, 0.2);
 }
-
-
 
 #menu-section .nav-menu {
   display: flex;
@@ -307,7 +310,7 @@ header ul li a {
 
 #menu-section .menu-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -315,7 +318,6 @@ header ul li a {
   text-align: left;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-right: 16px;
-
 }
 #menu-section .menu-item h3 {
   font-size: 16px;
@@ -323,7 +325,7 @@ header ul li a {
   justify-content: space-between;
 }
 #menu-section .menu-item-title {
-  flex: 1 ;
+  flex: 1;
 }
 
 #menu-section .menu-item-desc {
@@ -331,14 +333,14 @@ header ul li a {
   color: #282828;
   line-height: 1.7;
   margin-bottom: 22px;
-
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
   #menu-section .nav-menu {
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 40px
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 
   #menu-section .menu-container {
@@ -348,8 +350,8 @@ header ul li a {
 
 /* Gallery Section */
 #gallery-section img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -357,4 +359,57 @@ header ul li a {
 #gallery-section img:hover {
   transform: scale(1.1);
   filter: brightness(20%);
+}
+
+/* Chef Section */
+#chef-section .row {
+  background-color: var(--second-color);
+  margin: 0;
+}
+
+#chef-section .chef-item {
+  padding: 8%;
+}
+
+#chef-section .chef-header p {
+  color: #848484;
+  font-size: 14px;
+}
+
+#chef-section .chef-item p:nth-of-type(2),
+#chef-section .chef-item p:last-of-type {
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+#chef-section .chef-item p:last-of-type {
+  font-size: 14px;
+}
+
+#chef-section .chef-cover {
+  min-height: 550px;
+  padding: 0;
+  background-size: cover;
+  object-fit: cover;
+}
+#chef-section .chef-cover-1 {
+  background-image: url("../images/restaurant-chef-01.jpg");
+}
+
+#chef-section .chef-cover-2 {
+  background-image: url("../images/restaurant-chef-02.jpg");
+}
+
+#chef-section .chef-cover-3 {
+  background-image: url("../images/restaurant-chef-03.jpg");
+}
+
+#chef-section .owl-carousel {
+  padding: 0;
+}
+
+#chef-section .owl-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
