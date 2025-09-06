@@ -507,4 +507,20 @@ header ul li a {
   background-color: var(--main-color);
 }
 
-/* Conta */
+/* Contanct Section */
+.contact-item svg {
+  color: var(--main-color);
+  margin-bottom: 5.5% !important;
+}
+
+.contact-item h3{
+  font-size: 14px;
+  margin-bottom: 2% !important;
+  line-height: 24px;
+}
+
+.contact-item p {
+  font-size: 14px;
+  color: var(--three-color);
+  line-height: 24px;
+}
