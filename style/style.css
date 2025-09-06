@@ -472,3 +472,39 @@ header ul li a {
   color: var(--three-color);
   line-height: 22px;
 }
+
+/* Blog Hero Section */
+#blog-hero {
+  background-image: url('../images/fitness-about-bg.jpg');
+  background-size: cover;
+}
+
+.blog-hero-content {
+  width: 50%;
+  padding: 4.5%;
+  background-color: var(--second-color);
+}
+
+.blog-hero-content h2 {
+  font-size: 45px;
+  margin-bottom: 8% !important;
+  line-height: 50px;
+}
+
+.blog-hero-content p:first-of-type {
+  margin-bottom: 6.5% !important;
+  line-height: 30px;
+}
+.blog-hero-content p:last-of-type {
+  margin-bottom: 8% !important;
+  line-height: 24px;
+}
+
+.blog-btn {
+  font-size: 12px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+}
+
+/* Conta */
