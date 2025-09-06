@@ -59,6 +59,18 @@ a {
   cursor:e-resize !important; 
 }
 
+.layer-cover {
+  position: relative;
+}
+
+.layer-cover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 768px) {
   .p-tb {
     padding: 68px 0;
@@ -413,3 +425,28 @@ header ul li a {
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Chef Cover */
+.chef-cover {
+  height: 600px;
+  background-image: url('../images/hero-bg9.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chef-cover-content {
+  max-width: 768px;
+  position: relative;
+  z-index: 2;
+}
+.chef-cover-content h1 {
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+
+.chef-cover-content a {
+  background-color: var(--main-color);
+  padding: 12px 30px !important;
+}
+
