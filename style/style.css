@@ -524,3 +524,36 @@ header ul li a {
   color: var(--three-color);
   line-height: 24px;
 }
+
+/* Book Table Section */
+#book-section {
+  background-image: url('../images/hero-bg3.jpg');
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.book-header p {
+  font-size: 14px;
+  color: #bfbfbf;
+  line-height: 24px;
+  max-width: 500px;
+}
+
+input, textarea{
+  padding: 12px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px !important;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
