@@ -184,14 +184,22 @@ header ul li a {
   border: 2px solid #fff;
 }
 
+@media (max-width: 1200px) {
+   .home h1 {
+    font-size: 60px !important;
+  }
+}
+
+
 @media (max-width: 992px) {
   .home h1 {
-    font-size: 60px !important;
+    font-size: 55px !important;
   }
   .home .slider-box-border {
     padding: 32px !important;
   }
 }
+
 
 /* About Section */
 #about img {
@@ -540,7 +548,7 @@ header ul li a {
   font-size: 14px;
   color: #bfbfbf;
   line-height: 24px;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 input, textarea{
@@ -556,4 +564,26 @@ input, textarea{
 
 textarea {
   resize: none;
+}
+
+/* Footer */
+.logo-footer {
+  padding: 36px 0;
+}
+
+footer .container{
+  padding: 28px 0;
+  border-top: 1px solid rgba(0,0,0,0.1)
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer ul li a ,
+footer p{
+  font-size: 12px;
+  color: var(--three-color);
 }
