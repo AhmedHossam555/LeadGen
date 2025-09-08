@@ -4,7 +4,7 @@ $(document).ready(function () {
   const headerDom = $("header");
 
   // Scroll Top to Section
-  $("header ul li a").click(function (e) {
+  $("a").click(function (e) {
     $(this)
       .addClass("active")
       .parent()
