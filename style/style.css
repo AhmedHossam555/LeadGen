@@ -4,6 +4,10 @@
   --three-color: #707070;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -12,6 +16,7 @@ body {
 a {
   outline: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .p-tb {
@@ -101,6 +106,21 @@ header .book-btn {
 header ul li a {
   font-size: 12px !important;
   font-weight: 500 !important;
+  position: relative;
+}
+
+header ul li a.active {
+  opacity: 0.5;
+}
+
+header ul li a.active::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.8px;
+  background:rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -202,26 +222,26 @@ header ul li a {
 
 
 /* About Section */
-#about img {
+#about-section img {
   max-width: 100%;
   height: auto;
 }
 
-#about h2 {
+#about-section h2 {
   font-size: 25px;
   color: rgb(78, 43, 31);
   line-height: 33px;
   margin-bottom: 18px;
 }
 
-#about .content {
+#about-section .content {
   color: var(--three-color);
   margin-bottom: 18px;
   font-size: 18px;
   line-height: 28px;
 }
 
-#about p {
+#about-section p {
   color: var(--three-color);
   letter-spacing: 0.13px;
   line-height: 24px;
@@ -229,7 +249,7 @@ header ul li a {
   margin-bottom: 22px;
 }
 
-#about .btn-explore {
+#about-section .btn-explore {
   font-size: 12px;
   font-weight: 600;
   padding: 8px 25px;
@@ -240,13 +260,13 @@ header ul li a {
 }
 
 /* Services  Section*/
-#services h3 {
+#services-section h3 {
   font-size: 14px;
   margin-bottom: 5px;
   margin-top: 22px;
 }
 
-#services p {
+#services-section p {
   font-size: 14px;
   color: var(--three-color);
   margin-bottom: 5px;
