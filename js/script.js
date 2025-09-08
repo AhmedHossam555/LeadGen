@@ -45,7 +45,7 @@ $(document).ready(function () {
       }
     });
   });
-  
+
   // Owl Carousel for slider image
   $(".owl-carousel").owlCarousel({
     responsive: true,
