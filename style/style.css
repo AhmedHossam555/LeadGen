@@ -612,21 +612,23 @@ footer p{
 #scroll-top {
   padding: 10px;
   background-color: var(--main-color);
-  color: white;
+  color: #fff;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: bold;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 32px;
+  right: 32px;
   cursor: pointer;
   border: none;
-  border-radius: 50%; /* Makes the button round */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Adds subtle shadow */
-  z-index: 999; /* Ensures button stays above other elements */
-  transition: background 0.3s, transform 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 999;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  /* display: none; Hidden by default, shown with JS */
 }
 
 #scroll-top:hover {
-  background-color: #bfa14d; /* Slightly darker on hover */
-  transform: scale(1.08);
+  background-color: #bfa14d;
+  transform: scale(1.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
 }
