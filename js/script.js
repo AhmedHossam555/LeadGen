@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // Varaibles Dom
   const windowDom = $(window);
   const headerDom = $("header");
@@ -68,9 +69,12 @@ $(document).ready(function () {
   });
 
   // Scroll to Top on button click
-  $("#scroll-top").click(function() {
-    $("html, body").animate({
-      scrollTop: 0,
-    },500)
-  })
+  $("#scroll-top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+  });
 });

@@ -61,7 +61,7 @@ a {
 }
 
 .owl-carousel .owl-item {
-  cursor:e-resize !important; 
+  cursor: e-resize !important;
 }
 
 .layer-cover {
@@ -69,7 +69,7 @@ a {
 }
 
 .layer-cover::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -81,6 +81,7 @@ a {
     padding: 68px 0;
   }
 }
+
 /* Header */
 header {
   border-bottom: 0.8px solid rgba(255, 255, 255, 0.1);
@@ -114,13 +115,13 @@ header ul li a.active {
 }
 
 header ul li a.active::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 0.8px;
-  background:rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -205,11 +206,10 @@ header ul li a.active::before {
 }
 
 @media (max-width: 1200px) {
-   .home h1 {
+  .home h1 {
     font-size: 60px !important;
   }
 }
-
 
 @media (max-width: 992px) {
   .home h1 {
@@ -219,7 +219,6 @@ header ul li a.active::before {
     padding: 32px !important;
   }
 }
-
 
 /* About Section */
 #about-section img {
@@ -457,7 +456,7 @@ header ul li a.active::before {
 /* Chef Cover */
 .chef-cover {
   height: 600px;
-  background-image: url('../images/hero-bg9.jpg');
+  background-image: url("../images/hero-bg9.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -479,18 +478,18 @@ header ul li a.active::before {
 }
 
 /* Blog Section */
-.blog-box-image img{
+.blog-box-image img {
   max-width: 100%;
   height: auto;
   transition: all 0.3s ease 0s;
 }
 
 .blog-box:hover .blog-box-image img {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
   opacity: 0.5;
 }
 
-.blog-box-content h3{
+.blog-box-content h3 {
   font-size: 14px !important;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -503,7 +502,7 @@ header ul li a.active::before {
 
 /* Blog Hero Section */
 #blog-hero {
-  background-image: url('../images/fitness-about-bg.jpg');
+  background-image: url("../images/fitness-about-bg.jpg");
   background-size: cover;
 }
 
@@ -541,7 +540,7 @@ header ul li a.active::before {
   margin-bottom: 5.5% !important;
 }
 
-.contact-item h3{
+.contact-item h3 {
   font-size: 14px;
   margin-bottom: 2% !important;
   line-height: 24px;
@@ -555,14 +554,13 @@ header ul li a.active::before {
 
 /* Book Table Section */
 #book-section {
-  background-image: url('../images/hero-bg3.jpg');
+  background-image: url("../images/hero-bg3.jpg");
   background-size: cover;
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .book-header p {
   font-size: 14px;
@@ -571,7 +569,8 @@ header ul li a.active::before {
   max-width: 550px;
 }
 
-input, textarea{
+input,
+textarea {
   padding: 12px 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 14px !important;
@@ -591,9 +590,9 @@ textarea {
   padding: 36px 0;
 }
 
-footer .container{
+footer .container {
   padding: 28px 0;
-  border-top: 1px solid rgba(0,0,0,0.1)
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 footer ul {
@@ -602,8 +601,8 @@ footer ul {
   justify-content: center;
   gap: 20px;
 }
-footer ul li a ,
-footer p{
+footer ul li a,
+footer p {
   font-size: 12px;
   color: var(--three-color);
 }
@@ -621,7 +620,7 @@ footer p{
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
   z-index: 999;
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
   display: none; /* Hidden by default, shown with JS */
@@ -631,13 +630,20 @@ footer p{
 #scroll-top:hover {
   background-color: #bfa14d;
   transform: scale(1.12);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
 @keyframes scrollTopBounce {
-  0%   { transform: scale(0.8); }
-  50%  { transform: scale(1.15); }
-  70%  { transform: scale(0.95); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
