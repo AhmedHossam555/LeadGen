@@ -57,6 +57,15 @@ $(document).ready(function () {
     itemsMobile: false,
   });
 
+  // Scroll Top Button functionality
+  // Show/hide button on scroll
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $("#scroll-top").fadeIn();
+    } else {
+      $("#scroll-top").fadeOut();
+    }
+  });
 
   // Scroll to Top on button click
   $("#scroll-top").click(function() {
