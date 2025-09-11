@@ -60,7 +60,7 @@ $(document).ready(function () {
   // Scroll Top Button functionality
   // Show/hide button on scroll
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 300) {
       $("#scroll-top").fadeIn();
     } else {
       $("#scroll-top").fadeOut();
