@@ -607,3 +607,26 @@ footer p{
   font-size: 12px;
   color: var(--three-color);
 }
+
+/* Scroll Top Button */
+#scroll-top {
+  padding: 10px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%; /* Makes the button round */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Adds subtle shadow */
+  z-index: 999; /* Ensures button stays above other elements */
+  transition: background 0.3s, transform 0.3s;
+}
+
+#scroll-top:hover {
+  background-color: #bfa14d; /* Slightly darker on hover */
+  transform: scale(1.08);
+}

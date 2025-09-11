@@ -56,4 +56,12 @@ $(document).ready(function () {
     itemsTablet: false,
     itemsMobile: false,
   });
+
+
+  // Scroll to Top on button click
+  $("#scroll-top").click(function() {
+    $("html, body").animate({
+      scrollTop: 0,
+    },500)
+  })
 });
